@@ -1,2 +1,7 @@
 # Java-Brawl-29
-shitty server with online battles and random crash on loading screen
+
+ByteStream by Bsds
+BitStream by Royale Brawl
+
+Battle structure by Open Brawl 
+
