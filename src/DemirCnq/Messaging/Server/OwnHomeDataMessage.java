@@ -11,7 +11,7 @@ public class OwnHomeDataMessage extends PiranhaMessage {
     public int type;
     public DataOutputStream writer;
     public OwnHomeDataMessage(int type, DataOutputStream writer){
-        super(new byte[250]);
+        super(new byte[1000]);
         this.type = type;
         this.writer = writer;
     }
