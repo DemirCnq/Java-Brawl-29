@@ -77,7 +77,7 @@ public class OwnHomeDataMessage extends PiranhaMessage {
         this.helper.writeDataReference(this.bs,16, 0);
 
         this.bs.writeString("TR");
-        this.bs.writeString("Cenk");
+        this.bs.writeString("github.com/DemirCnq");
 
         this.bs.writeVInt(0); // rewards
 
@@ -230,7 +230,7 @@ public class OwnHomeDataMessage extends PiranhaMessage {
         this.bs.writeVLong(0,1);
         this.bs.writeVLong(0,1);
 
-        this.bs.writeString("Cenk");
+        this.bs.writeString("DemirCnq");
         this.bs.writeBoolean(true);
         this.bs.writeInt(0);
 
