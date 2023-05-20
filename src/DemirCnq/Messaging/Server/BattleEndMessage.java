@@ -16,7 +16,7 @@ public class BattleEndMessage extends PiranhaMessage {
         super(new byte[1000]);
         this.type = type;
         this.writer = writer;
-        players.add(new BattlePlayer(1,"DemirCnq"));
+        //players.add(new BattlePlayer(1,"DemirCnq"));
     }
     public void encode() throws IOException {
         //thx to lwitchy for his some parts from his batteEnd
@@ -41,8 +41,8 @@ public class BattleEndMessage extends PiranhaMessage {
         this.bs.writeVInt(-1); // Championship Challenge Type
         this.bs.writeVInt(1); // Championship Cleared
 
-        this.bs.writeVInt(players.size());
-        for(int i=0;i<players.size();i++){
+        this.bs.writeVInt(1);
+        for(int i=0;i<1;i++){
             this.bs.writeVInt(i); //Player Team and Star Player Type
 
             this.helper.writeDataReference(this.bs,16,0);
@@ -55,9 +55,9 @@ public class BattleEndMessage extends PiranhaMessage {
 
             this.bs.writeBoolean(true);
             this.bs.writeInt(0);
-            this.bs.writeInt(players.get(i).id);
+            this.bs.writeInt(1);
 
-            this.bs.writeString(players.get(i).name);
+            this.bs.writeString("DemirCnq");
             this.bs.writeVInt(100); // exp
             this.bs.writeVInt(28000000);
             this.bs.writeVInt(43000000 + 1);
